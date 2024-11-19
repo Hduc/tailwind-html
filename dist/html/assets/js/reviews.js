@@ -13,7 +13,7 @@
             el: '.swiper-pagination-custom',
             clickable: true,
             renderBullet: function (index, className) {
-              return '<div class="' + className + '"><img src="../assets/images/faces/' + (index + 1) + '.jpg" alt="Testimonial ' + (index + 1) + '"></div>';
+              return '<div class="' + className + '"><img src="/assets/images/faces/' + (index + 1) + '.jpg" alt="Testimonial ' + (index + 1) + '"></div>';
             },
         },
         autoplay: {

@@ -908,7 +908,7 @@
             type: 'image',
             opacity: 0.87,
             image: {
-                src: ['../assets/images/media/media-64.jpg'],
+                src: ['/assets/images/media/media-64.jpg'],
                 width: 466,
                 height: 406
             }

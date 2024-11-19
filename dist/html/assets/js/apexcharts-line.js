@@ -356,7 +356,7 @@
                     size: 0
                 },
                 image: {
-                    path: '../assets/images/faces/1.jpg'
+                    path: '/assets/images/faces/1.jpg'
                 }
             }]
         },

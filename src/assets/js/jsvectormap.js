@@ -137,11 +137,11 @@
                 attribute: 'image',
                 scale: {
                     marker1title: {
-                        url: '../assets/images/brand-logos/toggle-logo.png',
+                        url: '/assets/images/brand-logos/toggle-logo.png',
                         offset: [10, 0]
                     },
                     marker2title: {
-                        url: '../assets/images/brand-logos/toggle-logo.png',
+                        url: '/assets/images/brand-logos/toggle-logo.png',
                         offset: [10, 0]
                     }
                 },

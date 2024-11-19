@@ -130,7 +130,7 @@
         Swal.fire({
             title: 'Sweet!',
             text: 'Modal with a custom image.',
-            imageUrl: '../assets/images/media/media-59.jpg',
+            imageUrl: '/assets/images/media/media-59.jpg',
             imageWidth: 400,
             imageHeight: 200,
             imageAlt: 'Custom image',
@@ -142,10 +142,10 @@
             width: 600,
             padding: '3em',
             color: '#fff',
-            background: 'url(../assets/images/media/media-19.jpg)',
+            background: 'url(/assets/images/media/media-19.jpg)',
             backdrop: `
               rgba(0,0,0,0.3)
-              url(../assets/images/gif's/1.gif)
+              url(/assets/images/gif's/1.gif)
               left top
               no-repeat
             `

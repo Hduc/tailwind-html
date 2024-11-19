@@ -235,10 +235,10 @@ var options = {
     opacity: 0.85,
     image: {
       src: [
-        "../assets/images/media/media-21.jpg",
-        "../assets/images/media/media-21.jpg",
-        "../assets/images/media/media-21.jpg",
-        "../assets/images/media/media-21.jpg",
+        "/assets/images/media/media-21.jpg",
+        "/assets/images/media/media-21.jpg",
+        "/assets/images/media/media-21.jpg",
+        "/assets/images/media/media-21.jpg",
       ],
       width: 25,
       imagedHeight: 25,

@@ -29,7 +29,7 @@
     if (!state.id) {
       return state.text;
     }
-    var baseUrl = "../assets/images/faces/select2";
+    var baseUrl = "/assets/images/faces/select2";
     var $state = $(
       '<span><img src="' + baseUrl + "/" + state.element.value.toLowerCase() +'.jpg" class="img-flag" alt="img"> ' +state.text +"</span>"
     );
@@ -46,7 +46,7 @@
       return client.text;
     }
     var $client = $(
-      '<span><img src="../assets/images/faces/select2/' +
+      '<span><img src="/assets/images/faces/select2/' +
         client.element.value.toLowerCase() +
         '.jpg"  alt="img"> ' +
         client.text +
@@ -121,7 +121,7 @@
       if (!state.id) {
         return state.text;
       }
-      var baseUrl = "../assets/images/faces/select2";
+      var baseUrl = "/assets/images/faces/select2";
       var $state = $(
         '<span><img src="' +
           baseUrl +
@@ -145,7 +145,7 @@
         return client.text;
       }
       var $client = $(
-        '<span><img src="../assets/images/faces/select2/' +
+        '<span><img src="/assets/images/faces/select2/' +
           client.element.value.toLowerCase() +
           '.jpg" /> ' +
           client.text +
@@ -227,7 +227,7 @@
       if (!state.id) {
         return state.text;
       }
-      var baseUrl = "../assets/images/faces/select2";
+      var baseUrl = "/assets/images/faces/select2";
       var $state = $(
         '<span><img src="' +
           baseUrl +
@@ -251,7 +251,7 @@
         return client.text;
       }
       var $client = $(
-        '<span><img src="../assets/images/faces/select2/' +
+        '<span><img src="/assets/images/faces/select2/' +
           client.element.value.toLowerCase() +
           '.jpg" /> ' +
           client.text +

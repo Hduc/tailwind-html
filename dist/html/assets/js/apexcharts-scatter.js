@@ -245,7 +245,7 @@
             type: 'image',
             opacity: 1,
             image: {
-                src: ['../assets/images/faces/10.jpg', '../assets/images/faces/2.jpg'],
+                src: ['/assets/images/faces/10.jpg', '/assets/images/faces/2.jpg'],
                 width: 40,
                 height: 40
             }

@@ -90,7 +90,7 @@
     /* intl-tel-input Basic */
     const input = document.querySelector("#phone");
     window.intlTelInput(input, {
-        utilsScript: "../assets/libs/intl-tel-input/build/js/utils.js"
+        utilsScript: "/assets/libs/intl-tel-input/build/js/utils.js"
     });
     /* intl-tel-input Basic */
 
@@ -106,7 +106,7 @@
     // initialise plugin
     const iti = window.intlTelInput(input1, {
         initialCountry: "us",
-        utilsScript: "../assets/libs/intl-tel-input/build/js/utils.js"
+        utilsScript: "/assets/libs/intl-tel-input/build/js/utils.js"
     });
 
     const reset = () => {
@@ -148,7 +148,7 @@
             "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
             "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
             "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
-        utilsScript: "../assets/libs/intl-tel-input/build/js/utils.js" // just for formatting/placeholders etc
+        utilsScript: "/assets/libs/intl-tel-input/build/js/utils.js" // just for formatting/placeholders etc
     });
     /* intl-tel-input with Only Countries */
 
@@ -160,7 +160,7 @@
     const iti1 = window.intlTelInput(input4, {
         initialCountry: "us",
         hiddenInput: () => "full_phone",
-        utilsScript: "../assets/libs/intl-tel-input/build/js/utils.js" // just for formatting/placeholders etc
+        utilsScript: "/assets/libs/intl-tel-input/build/js/utils.js" // just for formatting/placeholders etc
     });
 
     form.onsubmit = () => {
@@ -181,7 +181,7 @@
     const input5 = document.querySelector("#phone-existing-number");
     window.intlTelInput(input5, {
         initialCountry: "us",
-        utilsScript: "../assets/libs/intl-tel-input/build/js/utils.js" // just for formatting/placeholders etc
+        utilsScript: "/assets/libs/intl-tel-input/build/js/utils.js" // just for formatting/placeholders etc
     });
     /* intl-tel-input with Existing Number */
 
@@ -190,7 +190,7 @@
     window.intlTelInput(input6, {
         initialCountry: "us",
         showSelectedDialCode: true,
-        utilsScript: "../assets/libs/intl-tel-input/build/js/utils.js" // just for formatting/placeholders etc
+        utilsScript: "/assets/libs/intl-tel-input/build/js/utils.js" // just for formatting/placeholders etc
     });
     /* intl-tel-input with Selected Dial Code */
 
