@@ -1,0 +1,258 @@
+ <!-- include mainhead.html"-->
+
+<link rel="stylesheet" href="../assets/libs/filepond/filepond.min.css">
+<link rel="stylesheet" href="../assets/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.css">
+<link rel="stylesheet" href="../assets/libs/filepond-plugin-image-edit/filepond-plugin-image-edit.min.css">
+
+</head>
+
+<body>
+
+    <!-- include switcher.html"-->
+    <!-- include loader.html"-->
+
+    <div class="page">
+        <!-- include header.html"-->
+        <!-- include sidebar.html"-->
+
+        <!-- Start::app-content -->
+        <div class="main-content app-content">
+            <div class="container-fluid">
+
+                <!-- Start::page-header -->
+                <div class="flex items-center justify-between page-header-breadcrumb flex-wrap gap-2">
+                    <div>
+                        <nav>
+                            <ol class="breadcrumb mb-1">
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Apps</a></li>
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">NFT</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Create NFT</li>
+                            </ol>
+                        </nav>
+                        <h1 class="page-title font-medium text-lg mb-0">Create NFT</h1>
+                    </div>
+                    <div class="btn-list">
+                        <button class="ti-btn bg-white dark:bg-bodybg border border-defaultborder dark:border-defaultborder/10 btn-wave !my-0">
+                            <i class="ri-filter-3-line align-middle me-1 leading-none"></i> Filter
+                        </button>
+                        <button class="ti-btn ti-btn-primary !border-0 btn-wave me-0">
+                            <i class="ri-share-forward-line me-1"></i> Share
+                        </button>
+                    </div>
+                </div>
+                <!-- End::page-header -->
+
+                <!-- Start::row-1 -->
+                <div class="grid grid-cols-12 sm:gap-x-6">
+                    <div class="xxl:col-span-9 col-xl-8 col-span-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <div class="box-title">Create NFT</div>
+                            </div>
+                            <div class="box-body">
+                                <div class="grid grid-cols-12 sm:gap-x-6 gap-y-3 justify-between">
+                                    <div class="xxl:col-span-6 xl:col-span-12 col-span-12">
+                                        <label class="form-label">Upload NFT</label>
+                                        <div class="create-nft-item bg-light py-3 rounded">
+                                            <input type="file" class="single-fileupload" name="filepond"
+                                                accept="image/png, image/jpeg, image/gif">
+                                        </div>
+                                    </div>
+                                    <div class="xxl:col-span-6 xl:col-span-12 col-span-12">
+                                        <div class="grid grid-cols-12 sm:gap-x-6 gap-y-3">
+                                            <div class="xl:col-span-12 col-span-12">
+                                                <label for="input-placeholder" class="form-label">NFT Title</label>
+                                                <input type="text" class="form-control" id="input-placeholder"
+                                                    placeholder="eg:Abstract Digital Art">
+                                            </div>
+                                            <div class="xl:col-span-12 col-span-12">
+                                                <label for="nft-description" class="form-label">NFT Description</label>
+                                                <textarea class="form-control" id="nft-description" rows="3"
+                                                    placeholder="Enter Description"></textarea>
+                                            </div>
+                                            <div class="xl:col-span-12 col-span-12">
+                                                <label for="nft-link" class="form-label">External Link</label>
+                                                <input type="text" class="form-control" id="nft-link"
+                                                    placeholder="External Link Here">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="xl:col-span-12 col-span-12">
+                                        <div class="grid grid-cols-12 sm:gap-x-6 gap-y-3">
+                                            <div class="xl:col-span-6 col-span-12">
+                                                <label for="nft-creator-name" class="form-label">Creator Name</label>
+                                                <input type="text" class="form-control" id="nft-creator-name"
+                                                    placeholder="Enter Name">
+                                            </div>
+                                            <div class="xl:col-span-6 col-span-12">
+                                                <label for="nft-price" class="form-label">NFT Price</label>
+                                                <input type="text" class="form-control" id="nft-price"
+                                                    placeholder="Enter Price">
+                                            </div>
+                                            <div class="xl:col-span-4 col-span-12">
+                                                <label for="nft-size" class="form-label">NFT Size</label>
+                                                <input type="text" class="form-control" id="nft-size"
+                                                    placeholder="Enter Size">
+                                            </div>
+                                            <div class="xl:col-span-4 col-span-12">
+                                                <label for="nft-royality" class="form-label">Royality</label>
+                                                <select class="form-control" data-trigger name="nft-royality"
+                                                    id="nft-royality">
+                                                    <option value="">Choose Royalities</option>
+                                                    <option value="Choice 1">Flat Royalty</option>
+                                                    <option value="Choice 2">Graduated Royalty</option>
+                                                    <option value="Choice 3">Tiered Royalty</option>
+                                                    <option value="Choice 3">Time-Limited Royalty</option>
+                                                    <option value="Choice 3">Customized Royalty</option>
+                                                </select>
+                                            </div>
+                                            <div class="xl:col-span-4 col-span-12">
+                                                <label for="nft-property" class="form-label">Property</label>
+                                                <input type="text" class="form-control" id="nft-property"
+                                                    placeholder="Enter Property">
+                                            </div>
+                                            <div class="xl:col-span-12 col-span-12">
+                                                <label class="form-label block">Method</label>
+                                                <div class="btn-group inline-flex" role="group"
+                                                    aria-label="Basic radio toggle button group"> <input type="radio"
+                                                        class="btn-check opacity-0 absolute" name="strap-material"
+                                                        id="strap1" checked=""> <label
+                                                        class="!mb-0 ti-btn  btn-wave !m-0 !block sm:!inline-flex !py-1 !px-2 ti-btn-outline-primary z-0 !rounded-e-none !border-e-0 sm:text-[0.813rem] text-[0.75rem] waves-effect waves-light"
+                                                        for="strap1"><i
+                                                            class="ti ti-tag me-1 align-middle text-[0.9375rem] inline-block"></i>Fixed
+                                                        Price</label> <input type="radio"
+                                                        class="btn-check  opacity-0 absolute" name="strap-material"
+                                                        id="strap2"> <label
+                                                        class="!mb-0 ti-btn  btn-wave !m-0 !block sm:!inline-flex !py-1 !px-2 ti-btn-outline-primary !text-defaulttextcolor !rounded-none !border-e-0 z-0  sm:text-[0.813rem] text-[0.75rem] waves-effect waves-light"
+                                                        for="strap2"><i
+                                                            class="ti ti-users text-[0.9375rem] me-1 align-middle inline-block"></i>Open
+                                                        For Bids</label> <input type="radio"
+                                                        class="btn-check  opacity-0 absolute" name="strap-material"
+                                                        id="strap3"> <label
+                                                        class="!mb-0 ti-btn  btn-wave !m-0 !block sm:!inline-flex !py-1 !px-2 ti-btn-outline-primary !rounded-s-none !text-defaulttextcolor z-0  sm:text-[0.813rem] text-[0.75rem] waves-effect waves-light"
+                                                        for="strap3"><i
+                                                            class="ti ti-hourglass-low text-[0.9375rem] me-1 align-middle inline-block"></i>Timed
+                                                        Auction</label> </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-footer text-end">
+                                <a href="javascript:void(0);" class="ti-btn ti-btn-primary btn-wave">Create NFT</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xxl:col-span-3 xl:col-span-4 col-span-12">
+                        <div class="box">
+                            <div class="box-body">
+                                <a href="javascript:void(0);" class="stretched-link"></a>
+                                <div class="relative overflow-hidden rounded">
+                                    <img src="../assets/images/nft-images/2.jpg" class="card-img mb-3" alt="...">
+                                    <p class="mb-0 text-white bg-primarytint2color nft-auction-time"> 04hrs : 24m : 38s
+                                    </p>
+                                </div>
+                                <div>
+                                    <div class="flex items-start gap-2">
+                                        <p class="text-[15px] mb-2 font-semibold">Abstract Digital Art</p>
+                                        <div class="ms-auto">
+                                            <span class="badge bg-danger/10 text-danger"><i
+                                                    class="ri-heart-fill me-1 text-danger align-middle inline-block"></i>1.43k</span>
+                                        </div>
+                                    </div>
+                                    <div class="flex mb-3 items-center flex-wrap gap-2">
+                                        <div class="leading-none">
+                                            <span class="avatar avatar-rounded avatar-sm">
+                                                <img src="../assets/images/faces/14.jpg" alt="">
+                                            </span>
+                                        </div>
+                                        <div class="flex-auto">
+                                            <p class="mb-0 font-medium">Manistics NFT </p>
+                                            <p class="text-xs text-textmuted dark:text-textmuted/50 mb-0 leading-none">-
+                                                @manistics454</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="flex justify-between items-center mb-3">
+                                        <p class="mb-0 font-medium">Current Bid :</p>
+                                        <h6 class="font-semibold mb-0 bid-amt align-middle flex items-center gap-1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="65"
+                                                viewBox="0 0 40 65">
+                                                <g fill="none" fill-rule="evenodd">
+                                                    <g fill-rule="nonzero" transform="translate(-227 -93)">
+                                                        <g transform="translate(227 93)">
+                                                            <g>
+                                                                <path fill="#8A92B2"
+                                                                    d="M20.1.8v23.3c0 .1-.1.2-.2.2-.7.3-1.3.6-2 .9-.9.4-1.9.8-2.8 1.3L11.8 28l-2.7 1.2-3.3 1.5c-.9.4-1.8.8-2.8 1.3-.7.3-1.5.7-2.2 1-.1 0-.1.1-.2 0H.5c.3-.5.6-.9.9-1.4 1.6-2.7 3.3-5.4 4.9-8.1 1.7-2.9 3.5-5.8 5.2-8.7 1.6-2.7 3.2-5.4 4.8-8 1.2-2 2.4-3.9 3.5-5.9.2 0 .2-.1.3-.1-.1 0 0 0 0 0z">
+                                                                </path>
+                                                                <path fill="#454A75"
+                                                                    d="M39.5 33c-1.5 1-3.1 1.9-4.6 2.8-4.9 2.9-9.7 5.7-14.6 8.6-.1 0-.1.1-.2.1s-.1-.1-.1-.1v-.3-19.5-.3c0-.1.1-.1.2-.1.4.2.8.4 1.3.6 1.2.6 2.5 1.1 3.7 1.7 1.1.5 2.1 1 3.2 1.4 1.1.5 2.1 1 3.2 1.5.9.4 1.9.8 2.8 1.3.9.4 1.9.8 2.8 1.3.7.3 1.4.7 2.2 1 0-.1 0 0 .1 0z">
+                                                                </path>
+                                                                <path fill="#8A92B2"
+                                                                    d="M20.1 64.1s-.1 0 0 0c-.1 0-.1 0-.2-.1-2-2.8-3.9-5.5-5.9-8.3l-6-8.4c-1.9-2.7-3.9-5.4-5.8-8.2L.7 37c0-.1-.1-.1-.1-.2.1 0 .1.1.2.1 2.7 1.6 5.5 3.2 8.2 4.8 3.1 1.9 6.3 3.7 9.4 5.6.5.3 1.1.6 1.6.9.1 0 .1.1.1.2V64.1z">
+                                                                </path>
+                                                                <path fill="gray"
+                                                                    d="M.6 33s.1 0 0 0c.1 0 .1 0 0 0 0 .1 0 .1 0 0z">
+                                                                </path>
+                                                                <path fill="#62688F"
+                                                                    d="M.7 33.1c0-.1 0-.1 0 0 1-.5 2-.9 3-1.4l3.9-1.8c1-.5 2-.9 3-1.4 1.4-.7 2.9-1.3 4.3-2 1-.4 2-.9 3-1.3.7-.3 1.4-.6 2.1-1 .1 0 .1-.1.2-.1V44.5c-.1.1-.1 0-.2 0-.3-.2-.6-.3-.8-.5L.9 33.2c-.1-.1-.2-.1-.2-.1zM39.4 36.8c0 .1 0 .1-.1.2-5.8 8.2-11.6 16.3-17.4 24.5-.6.9-1.2 1.7-1.8 2.6V64v-.2-15.3-.3c1.3-.8 2.6-1.6 3.9-2.3l15.3-9c0-.1.1-.1.1-.1z">
+                                                                </path>
+                                                                <path fill="#62688F"
+                                                                    d="M20.1 24.2V24 1.1.9l19.2 31.8c.1.1.2.2.2.3-.4-.2-.8-.4-1.3-.6-.5-.2-1-.5-1.5-.7-.3-.1-.6-.3-1-.4-.5-.2-1.1-.5-1.6-.7-.3-.1-.6-.3-.9-.4l-2.1-.9c-.4-.2-.7-.3-1.1-.5-.5-.2-1-.5-1.5-.7-.3-.1-.6-.3-.9-.4l-2.1-.9c-.4-.2-.7-.3-1.1-.5-.5-.2-1-.5-1.5-.7-.3-.2-.7-.3-1-.5l-1.8-.9z">
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                            0.015ETH
+                                        </h6>
+                                    </div>
+                                    <div class="grid">
+                                        <a href="javascript:void(0);"
+                                            class="ti-btn ti-btn-primary mb-md-0">Place Bid</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::app-content -->
+
+
+        <!-- include footer.html"-->
+        <!-- include responsive-search-modal.html"-->
+
+    </div>
+
+    <!-- include commonjs.html"-->
+
+<!-- include custom-switcherjs.html"-->
+
+    <!-- Filepond JS -->
+    <script src="../assets/libs/filepond/filepond.min.js"></script>
+    <script src="../assets/libs/filepond-plugin-image-preview/filepond-plugin-image-preview.min.js"></script>
+    <script
+        src="../assets/libs/filepond-plugin-image-exif-orientation/filepond-plugin-image-exif-orientation.min.js"></script>
+    <script src="../assets/libs/filepond-plugin-file-validate-size/filepond-plugin-file-validate-size.min.js"></script>
+    <script src="../assets/libs/filepond-plugin-file-encode/filepond-plugin-file-encode.min.js"></script>
+    <script src="../assets/libs/filepond-plugin-image-edit/filepond-plugin-image-edit.min.js"></script>
+    <script src="../assets/libs/filepond-plugin-file-validate-type/filepond-plugin-file-validate-type.min.js"></script>
+    <script src="../assets/libs/filepond-plugin-file-validate-type/filepond-plugin-file-validate-type.min.js"></script>
+    <script src="../assets/libs/filepond-plugin-image-crop/filepond-plugin-image-crop.min.js"></script>
+    <script src="../assets/libs/filepond-plugin-image-resize/filepond-plugin-image-resize.min.js"></script>
+    <script src="../assets/libs/filepond-plugin-image-transform/filepond-plugin-image-transform.min.js"></script>
+
+    <!-- Create NFT JS -->
+    <script src="../assets/js/nft-create.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>

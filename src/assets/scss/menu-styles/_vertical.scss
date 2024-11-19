@@ -1,0 +1,483 @@
+/* Start:: vertical */
+.main-sidebar {
+  @apply h-screen relative overflow-auto shadow-[6px_0px_16px_0px_rgba(0,0,0,0.05)] mt-[4.25rem] pt-2 pb-20;
+}
+[data-nav-layout="vertical"] {
+  .app-sidebar {
+    @apply h-full;
+    .side-menu__item {
+      @apply my-1;
+    }
+  }
+}
+[dir="rtl"] {
+  .app-sidebar {
+    .fe-chevron-right {
+      @apply rotate-180;
+    }
+  }
+
+  .sidemenu-toggle .header-link {
+    .header-link-icon {
+      @apply rotate-180;
+    }
+  }
+}
+
+.app-sidebar {
+  @apply w-60 bg-menubg border-e-menubordercolor dark:border-e-defaultborder/10 fixed z-[103] transition-all duration-[0.05s] ease-[ease] border-e border-solid start-0 top-0;
+
+  .main-sidebar-header {
+    @apply h-[4.25rem] w-60 fixed flex bg-menubg z-[9] items-center justify-center border-b-menubordercolor border-e-menubordercolor transition-all duration-[0.05s] ease-[ease] px-4 py-[0.813rem] border-b border-solid border-e;
+
+    .header-logo {
+      img {
+        @apply h-[1.7rem] leading-[1.7rem];
+      }
+
+      .desktop-logo {
+        @apply block;
+      }
+
+      .desktop-dark,
+      .toggle-logo,
+      .toggle-dark,.toggle-white, .desktop-white {
+        @apply hidden;
+      }
+    }
+  }
+  .slide-menu.child1 .side-menu__item:hover, .slide-menu.child2 .side-menu__item:hover, .slide-menu.child3 .side-menu__item:hover {
+    @apply text-primary;
+  }
+  .slide__category {
+    @apply text-menuprimecolor text-[0.65rem] font-medium tracking-[0.05rem] uppercase whitespace-nowrap relative opacity-50 px-7 py-3;
+  }
+
+  .slide {
+    @apply m-0 px-2 py-0;
+  }
+
+  .side-menu__item {
+    @apply relative flex items-center no-underline text-[0.8rem] text-menuprimecolor font-normal border px-5 py-[0.65rem] rounded-lg border-solid border-transparent;
+
+    &.active {
+      @apply text-primary;
+
+      .side-menu__label,
+      .side-menu__angle {
+        @apply text-menuprimecolor;
+      }
+
+      .side-menu__icon {
+        @apply text-menuprimecolor;
+      }
+    }
+    &:hover {
+      @apply bg-transparent;
+    }
+
+    &.active {
+      @apply font-medium;
+    }
+    svg.side-menu__icon  {
+      @apply w-5 h-5;
+    }
+  }
+
+  .slide-menu {
+
+    &.child1,
+    &.child2,
+    &.child3 {
+      .side-menu__item {
+        @apply bg-transparent #{!important};
+
+        &.active {
+          @apply bg-transparent #{!important};
+        }
+      }
+    }
+  }
+
+  .slide-menu {
+    @apply p-0;
+  }
+
+  .slide-menu {
+
+    &.child1,
+    &.child2 {
+      .side-menu__item {
+        @apply px-4 py-[0.45rem];
+      }
+    }
+  }
+
+  .slide-menu {
+
+    &.child1,
+    &.child2,
+    &.child3 {
+
+      .side-menu__item {
+        &:before {
+          @apply absolute content-["\f1ae"] text-xs opacity-80 -start-1 font-remix;
+        }
+      }
+
+      li {
+        @apply relative p-0;
+      }
+    }
+    &.child1 li {
+      @apply ps-8;
+    }
+    &.child2 li {
+      @apply ps-6;
+    }
+    &.child3 li {
+      @apply ps-3;
+    }
+  }
+
+  .side-menu__label {
+    @apply whitespace-nowrap text-menuprimecolor relative text-[0.85rem] leading-none align-middle flex items-center;
+  }
+
+  .side-menu__icon {
+    @apply leading-[0] text-base text-center text-menuprimecolor rounded-md me-3;
+  }
+  svg.side-menu_icon {
+    @apply w-4 h-4;
+  }
+
+  .side-menu__angle {
+    @apply origin-center absolute leading-none text-base text-menuprimecolor transition-all duration-[0.05s] ease-[ease] opacity-80 end-5;
+  }
+
+  .slide.side-menu__label1 {
+    @apply hidden;
+  }
+}
+
+.horizontal-logo {
+  @apply px-0 py-5;
+}
+
+.slide.has-sub .slide-menu {
+  transform: translate(0, 0) !important;
+  @apply visible #{!important};
+}
+
+.nav ul li {
+  @apply list-none;
+}
+
+.nav>ul {
+  @apply ps-0;
+}
+
+.slide-menu {
+  @apply hidden;
+}
+
+.slide.has-sub {
+  @apply grid;
+
+  &.open {
+    >.side-menu__item .side-menu__angle {
+      @apply rotate-180;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  [data-toggled="open"] {
+    .page {
+      @apply absolute;
+    }
+  }
+
+}
+
+/* Responsive Styles Start */
+
+@media (max-width: 991.98px) {
+  .horizontal-logo {
+    .header-logo {
+
+      .desktop-logo,
+      .desktop-dark,
+      .toggle-dark {
+        @apply hidden;
+      }
+
+      .toggle-logo {
+        @apply block;
+      }
+    }
+  }
+
+  .main-content {
+    @apply pt-[1.75rem];
+  }
+
+  .main-sidebar-header {
+    @apply hidden #{!important};
+  }
+
+  .main-sidebar {
+    @apply mt-0;
+  }
+
+  .app-sidebar {
+    @apply top-0;
+  }
+
+  .main-menu {
+    @apply m-0 #{!important};
+  }
+}
+
+.slide-left,
+.slide-right {
+  @apply hidden;
+}
+
+[data-nav-layout="vertical"] {
+  .main-menu>.slide {
+
+    &.active,
+    &:hover {
+
+      .slide-menu .side-menu__item:hover {
+        .side-menu__angle {
+          @apply text-white  #{!important}; 
+        }
+      }
+    }
+  }
+
+  .slide-menu .side-menu__item:hover {
+    .side-menu__angle {
+      @apply text-menuprimecolor fill-menuprimecolor #{!important};
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .horizontal-logo {
+    @apply hidden;
+  }
+}
+
+/* Responsive Styles End */
+
+/* Responsive Overlay Start */
+#responsive-overlay {
+  @apply invisible fixed z-[101] bg-[rgba(15,23,42,0.5)] transition-all ease-in-out duration-100 inset-0;
+
+  &.active {
+    @apply visible;
+  }
+}
+
+/* Responsive Overlay End */
+
+/* Go Premium Button */
+
+.sidebar-profile {
+  @apply tracking-[1px];
+}
+
+.sidebar-premium-btn {
+  @apply flex items-center justify-center;
+  
+  button {
+    @apply tracking-[1px];
+  }
+}
+
+/* Go Premium Button */
+
+@media (min-width: 992px) {
+  [data-toggled=icon-click-closed]:not([data-nav-layout=horizontal]) .app-content, [data-toggled=icon-hover-closed]:not([data-nav-layout=horizontal]) .app-content, [data-toggled=icon-text-close]:not([data-nav-layout=horizontal]) .app-content, [data-toggled=menu-click-closed]:not([data-nav-layout=horizontal]) .app-content, [data-toggled=menu-hover-closed]:not([data-nav-layout=horizontal]) .app-content {
+    @apply min-h-[calc(100vh_+_50rem)];
+  }
+}
+
+/* Start:: customer Dashboard */
+.main-customer-sidebar {
+  @apply max-h-screen relative overflow-auto p-0;
+}
+.main-customer-menu {
+  @apply mb-0 rounded-[0.85rem] border-b-0;
+}
+.customer-sidebar {
+  @apply h-full bg-bodybg z-[100] transition-all duration-[320ms] ease-[ease] start-0 top-0;
+  .slide {
+    @apply m-0;
+      &:last-child {
+        .side-menu__item {
+          @apply border-b-0;
+        }
+      }
+  }
+  .slide.has-sub {
+      &.open {
+          .side-menu__angle {
+            @apply rotate-180 #{!important};
+          }
+      }
+  }
+  .side-menu__item {
+    @apply border-b-defaultborder relative flex items-center no-underline text-[0.8rem] text-defaulttextcolor font-medium px-5 py-4 border-b border-solid;
+      &.active,
+      &:hover {
+        @apply text-primary bg-transparent;
+          .side-menu__label,.side-menu__angle {
+               @apply text-primary;
+          }
+          .side-menu__icon {
+               @apply text-primary;
+          }
+          &:before{
+               @apply text-primary #{!important};
+          }
+      }
+  }
+  .slide-menu {
+      &.child1,&.child2,&.child3 {
+          .side-menu__item {
+              &.active {
+                  @apply bg-transparent;
+              }
+          }
+          .slide .side-menu__item {
+              position: relative;
+              &.active {
+                  &:before {
+                    @apply text-primary;
+                  }
+              }
+              &:before {
+                @apply absolute content-["\f1ae"] text-base font-medium text-defaulttextcolor start-4 font-remix;
+              }
+          }
+      }
+  } 
+  .slide-menu {
+     @apply p-0;
+  }
+  .slide-menu {
+      &.child1,
+      &.child2 {
+          .side-menu__item {
+            @apply opacity-90 px-10 py-[0.8rem];
+          }
+      }
+  }
+  .slide-menu {
+      &.child1,
+      &.child2,
+      &.child3 {
+          .side-menu__item {
+              &:hover {
+                @apply text-primary;
+              }
+          }
+          li {
+            @apply relative p-0;
+          }
+      }
+  }
+  .side-menu__label {
+    @apply whitespace-nowrap text-menuprimecolor relative text-[0.8rem] leading-none align-middle;
+  }
+  .side-menu__icon {
+    @apply w-[1.15rem] h-6 text-base text-center text-primary rounded-md me-2;
+  }
+  .side-menu__angle {
+    @apply origin-center absolute text-[0.85rem] text-menuprimecolor transition-all duration-[320ms] ease-[ease] end-3;
+  }
+  .slide.side-menu__label1 {
+      @apply hidden;
+  }
+  .slide.has-sub .slide-menu {
+    @apply translate-x-0 translate-y-0 visible;
+  }
+}
+.nav ul li {
+  @apply list-none;
+}
+.nav > ul {
+  @apply ps-0;
+}
+.slide-menu {
+  @apply hidden;
+}
+.slide.has-sub {
+  @apply grid;
+  &.open {
+      > .side-menu__item .side-menu__angle {
+        @apply rotate-180 ;
+      }
+  }
+}
+
+/* Responsive Styles Start */
+
+@media (max-width: 991.98px) {
+  .main-customer-sidebar {
+    @apply mt-0;
+  }
+  .customer-sidebar {
+    @apply top-[3.75rem];
+  }
+}
+/* Responsive Styles End */
+
+/* Start:: customer-related-menu */
+.landing-body.customer-related-portal {
+  .app-sidebar .side-menu__item {
+    @apply p-4;
+  } 
+}
+.landing-body.customer-related-portal {
+  .app-sidebar .side-menu__icon {
+    @apply w-auto h-auto leading-none text-primary text-[1.05rem] me-1 p-0;
+  }
+}
+/* End:: customer-related-menu */
+/* End:: vertical */
+
+[data-menu-styles="dark"][class="light"] {
+  .app-sidebar .main-sidebar-header .header-logo .desktop-logo {
+    @apply hidden;
+  }
+  .app-sidebar .main-sidebar-header .header-logo .desktop-dark {
+    @apply block;
+  }
+}
+[data-menu-styles="dark"] {
+  .app-sidebar .side-menu__item.active .side-menu__label,
+  .app-sidebar .side-menu__item.active .side-menu__angle {
+    @apply text-white;
+  }
+  .app-sidebar .side-menu__item.active,
+  .app-sidebar .side-menu__item:hover {
+    @apply text-white;
+  }
+} 
+
+.light{
+  &[data-menu-styles="dark"]{
+  .app-sidebar{
+    @apply bg-[rgb(32,41,71)];
+  }
+  .main-sidebar-header {
+    @apply bg-[rgb(32,41,71)];
+  }
+}
+}
+

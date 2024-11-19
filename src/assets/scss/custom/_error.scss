@@ -1,0 +1,24 @@
+/* Start:: error */
+.error-bg {
+    @apply relative w-full h-full bg-[rgba(255,255,255,0.77)] min-h-[100vh];
+    &:before {
+        @apply absolute content-[""] w-full h-full bg-[url(../images/media/svg/pattern-2.svg)] bg-no-repeat bg-cover bg-center opacity-[0.15] inset-0;
+    }
+}
+.error-page {
+    @apply absolute w-full min-h-screen flex justify-center items-center bg-cover bg-no-repeat bg-center;
+  }
+  .error-text {
+    @apply text-[11rem] font-medium leading-none;
+  }
+@media (max-width: 575.98px) {
+    .error-text {
+        @apply text-5xl;
+    }
+}
+[class= "dark"] {
+    .error-bg {
+        @apply bg-[rgba(0,0,0,0.4)];
+    }
+}
+/* End:: error */

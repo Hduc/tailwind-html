@@ -1,0 +1,82 @@
+
+
+:root {
+	--body-bg: 											249 250 252;
+	--primary: 											92 103 247;
+	--primary-rgb: 										92, 103, 247;
+	--primary-tint1-rgb: 								227 84 212;
+	--primary-tint2-rgb: 								255 93 159;
+	--primary-tint3-rgb: 								255 142 111;
+	--secondary: 										158 92 247;
+	--warning: 											255 198 88;
+	--info: 											14 165 232;
+	--success: 											33 206 158;
+	--danger: 											251 66 66;
+	--light: 											249 249 250;
+	--dark: 											10 10 10;
+	--orange: 											253 97 43;
+	--pink: 											254 84 155;
+	--teal: 											0 216 216;
+	--purple: 											123 118 254;
+	--green: 											1 239 140;
+	--default-body-bg-color: 							249 250 252;
+	--default-text-color: 							  	33 43 55;
+	--default-border: 									236 243 251;
+	--default-background: 							  	249 250 251;
+	--menu-bg: 											255 255 255;
+	--menu-prime-color: 								97 116 143;
+	--menu-border-color: 								226 230 241;
+	--header-bg: 										255 255 255;
+	--header-prime-color: 								97 116 143;
+	--header-border-color: 								226 230 241;
+	--custom-white: 									255 255 255;
+	--custom-black: 								  	0 0 0;
+	--list-hover-focus-bg: 							  	245 246 247;
+	--text-muted: 										110 130 159;
+	--input-border: 									222 231 241;
+	--form-control-bg: 								  	255 255 255;
+	--bs-link-color-rgb: 							  	33 43 55;
+	--facebook: 										59 89 152;
+    --twitter: 											0 172 238;
+    --github: 											51 51 51;    
+    --google: 											207 78 67;
+    --youtube: 											255 0 0;
+}
+
+
+/* dark mode */
+.dark{
+	--body-bg: 									        25 25 28;	
+	--dark-bg: 									        45 45 48;
+	--menu-bg: 											25 25 28;
+	--menu-border-color: 								255 255 255;
+	--menu-prime-color: 								255 255 255;
+	--header-bg: 										25 25 28;
+	--header-prime-color: 								255 255 255;
+	--header-border-color: 								255 255 255;
+	--custom-white: 									25 25 28;
+	--custom-black: 									255 255 255;  
+	--default-border: 									255 255 255;
+	--default-text-color: 								255 255 255;
+	--light:								     		43 46 49;	
+	--dark: 											249 249 250; 
+	--list-hover-focus-bg: 								255 255 255;
+	--default-background: 								45 45 48;
+	--default-body-bg-color: 							45 45 48;
+	--text-muted: 										255 255 255;
+	--input-border: 									255 255 255;
+	--form-control-bg: 									25 25 28;
+}
+
+[data-menu-styles="dark"][class="light"] {
+	--menu-bg: 										32 41 71;
+	--menu-prime-color: 							178 184 199;
+}
+[data-menu-styles=dark] {
+    --menu-border-color: 							255, 255, 255, 0.1;
+}
+[data-menu-styles="color"] {
+	--menu-bg: 										92 103 247;
+	--menu-prime-color: 							255 255 255;
+	--menu-border-color: 							255 255 255;
+}

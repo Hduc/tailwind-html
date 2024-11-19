@@ -1,0 +1,84 @@
+/* Start:: icontext */
+[data-vertical-style="icontext"][data-toggled="icon-text-close"] {
+    @media (min-width: 992px) {
+        &:not([data-icon-text="open"]) {
+            .app-sidebar {
+                @apply absolute w-36;
+                .main-sidebar {
+                    @apply overflow-visible;
+                }
+                .main-sidebar-header {
+                    @apply w-36 justify-center;
+                }
+                .side-menu__icon {
+                    @apply me-0 mb-2;
+                }
+                .slide {
+                    @apply p-0;
+                }
+                .slide__category,
+                .side-menu__angle {
+                    @apply hidden;
+                }
+                .slide.has-sub.open {
+                    .slide-menu {
+                        @apply hidden #{!important};
+                    }
+                }    
+                .side-menu__item {
+                    @apply rounded-none;
+                }
+                .side-menu__item,
+                .side-menu__label {
+                    @apply block text-center;
+                }
+            }
+            &[data-menu-position="fixed"] {
+                .app-sidebar {
+                    @apply fixed;
+                }
+            } 
+            .app-header {
+                @apply ps-36;
+            }
+        }
+        .app-content {
+            @apply ms-36;
+        }
+        &[data-icon-text="open"] {
+            .app-sidebar {
+                @apply w-60;
+                .main-sidebar-header {
+                    @apply w-60;
+                }
+                .side-menu__icon { 
+                    @apply me-2.5 mb-0;
+                }
+                .slide {
+                    @apply px-2.5 py-0;
+                }
+                .slide-menu {
+                    &.child1,.child2,.child3 {
+                        li {
+                            @apply ps-6 p-0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    [data-nav-layout="vertical"] {
+        &[data-vertical-style="icontext"][data-toggled="icon-text-close"] { 
+            .app-sidebar {
+                .slide .side-menu__label {
+                    .badge {
+                        @apply hidden;
+                    }
+                }
+            }
+        }
+    }
+}
+/* End:: icontext */

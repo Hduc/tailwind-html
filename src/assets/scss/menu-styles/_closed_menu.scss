@@ -1,0 +1,36 @@
+/* Start:: closed_menu */
+[data-vertical-style="closed"][data-toggled="close-menu-close"] {
+    .app-sidebar {
+        @apply hidden;
+    }
+} 
+  @media (min-width: 992px) {
+    [data-vertical-style="closed"][data-toggled="close-menu-close"] {
+        .app-content {
+          @apply ms-0;
+        }
+    }
+    [data-vertical-style="closed"][data-toggled="close-menu-close"] {
+        .app-header {
+          @apply ps-0;
+        }
+    } 
+  }
+  [data-vertical-style="closed"][data-toggled="close-menu-open"] {
+      .app-sidebar {
+        @apply block;
+      }
+  }
+  @media (min-width: 992px) {
+    [data-vertical-style="closed"][data-toggled="close-menu-open"] {
+        .app-content {
+          @apply ms-60;
+        }
+    } 
+    [data-vertical-style="closed"][data-toggled="close-menu-open"] {
+        .app-header {
+          @apply ps-60;
+        }
+    }
+  }
+  /* End:: closed_menu */

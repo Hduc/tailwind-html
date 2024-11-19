@@ -1,0 +1,88 @@
+/* Start:: file-manager */
+.file-manager-folders,
+.selected-file-details {
+  @apply bg-white dark:bg-bodybg;
+}
+
+.folder-svg-container svg {
+  @apply w-12 h-12;
+}
+
+.file-details img {
+  @apply w-[150px] h-[150px] bg-light rounded-[50%];
+}
+
+@media (max-width: 1200px) {
+  .selected-file-details.open {
+    @apply w-[19.5rem] absolute block shadow-[0_0.125rem_0_rgba(10,10,10,0.04)] border-s-defaultborder border-s border-solid end-0 top-2;
+  }
+}
+
+.file-manager-folders.open {
+  @apply block;
+}
+
+@media (max-width: 365px) {
+  .file-manager-container .file-folders-container {
+    @apply max-h-[calc(100vh_-_12.9rem)];
+  }
+}
+
+ul.files-main-nav {
+  @apply mb-0;
+
+  li {
+    @apply rounded-md mb-[0.08rem] px-[0.8rem] pt-2 pb-[0.43rem];
+
+    &:last-child {
+      @apply mb-0;
+    }
+
+    div {
+      @apply text-textmuted dark:text-textmuted/50;
+    }
+
+    &:hover {
+      div {
+        @apply text-primary;
+      }
+    }
+
+    &.active {
+      @apply bg-primary/10;
+
+      div {
+        @apply text-primary;
+      }
+    }
+
+    div.filemanager-upgrade-storage {
+      @apply w-[235px] h-auto bg-light border-defaultborder rounded-md text-center text-defaulttextcolor p-4 border-2 border-dashed;
+
+      img {
+        @apply w-[150px] h-[150px];
+      }
+    }
+  }
+}
+#file-manager-storage {
+  .apexcharts-pie line, .apexcharts-pie circle {
+    @apply stroke-transparent;
+  }
+  .apexcharts-datalabels-group {
+    .apexcharts-text.apexcharts-datalabel-label {
+      @apply fill-textmuted dark:fill-textmuted/50 #{!important};
+    }
+  }
+}
+#file-manager-storage {
+  .apexcharts-datalabels-group .apexcharts-text.apexcharts-datalabel-value {
+    @apply fill-defaulttextcolor #{!important};
+  }
+}
+#file-manager-storage{
+  .apexcharts-datalabels-group {
+     @apply translate-y-[-9px];
+   }
+  }
+/* End:: file-manager */

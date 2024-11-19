@@ -1,0 +1,101 @@
+@layer components {
+    /* Start Pagination Styles */
+    .ti-pagination {
+        @apply flex items-center;
+
+        li {
+            .page-link {
+                @apply border-s border-t border-b border-defaultborder dark:border-defaultborder/10 text-defaulttextcolor leading-[1.5] dark:text-defaulttextcolor/80 hover:text-primary py-[0.375rem] px-[0.75rem] inline-flex items-center text-[0.8125rem] font-normal gap-2;
+
+                &.active {
+                    @apply bg-primary text-white border-primary #{!important};
+                }
+                &.disabled {
+                    @apply  pointer-events-none text-opacity-30;
+                }
+                &:last-child{
+                    @apply border-e border-defaultborder dark:border-defaultborder/10;
+                }
+            }
+
+            &:not(:first-child) .page-link {
+                @apply ms-[calc(1px_*_-1)];
+            }
+
+            &:first-child .page-link {
+                @apply rounded-s-md;
+            }
+
+            &:last-child .page-link {
+                @apply rounded-e-md ;
+            }
+        }
+
+        &.pagination-sm {
+            li {
+                .page-link {
+                    @apply py-2 px-2 text-xs;
+                }
+
+                &:first-child .page-link {
+                    @apply rounded-s-md ;
+                }
+
+                &:last-child .page-link {
+                    @apply rounded-e-md;
+                }
+            }
+        }
+
+        &.pagination-lg {
+            li {
+                .page-link {
+                    @apply py-3 sm:px-6 px-3 text-lg;
+                }
+
+                &:first-child .page-link {
+                    @apply rounded-s-md ;
+                }
+
+                &:last-child .page-link {
+                    @apply rounded-e-md;
+                }
+            }
+        }
+    }
+    .pagination-style-1 {
+        .ti-pagination {
+            li {
+                @apply space-x-2;
+                .page-link {
+                    @apply border-0 rounded-full leading-none py-[0.375rem] px-3;
+                }
+            }
+        }
+    }
+    .pagination-style-2 {
+        .ti-pagination {
+            li {
+                @apply space-x-2;
+                .page-link {
+                    @apply border-0 rounded-[0.3rem] leading-none py-[0.375rem] px-3;
+                    &.active {
+                        @apply bg-primary text-white relative font-medium before:absolute before:h-1 leading-[1.5] before:w-full before:inset-x-0 before:bottom-0 before:bg-primary before:hidden;
+                    }
+                }
+            }
+        }
+    }
+    .pagination-style-3 {
+        .ti-pagination {
+            li {
+                @apply space-x-2;
+                .page-link {
+                    @apply border-0 rounded-full leading-none py-[0.375rem] px-3;
+                }
+            }
+        }
+    }
+
+    /* End Pagination Styles */
+}

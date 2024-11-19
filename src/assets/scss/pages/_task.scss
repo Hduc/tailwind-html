@@ -1,0 +1,94 @@
+/* Start:: task */
+/* Start::task-kanboard-board */
+.TASK-kanban-board {
+    @apply flex overflow-x-auto items-stretch mb-3 pb-4;
+    .kanban-tasks-type {
+        @apply min-w-[20rem] w-full me-2;
+        .kanban-tasks{
+            .card {
+                @apply touch-none;
+            }
+        }
+    }
+    &::-webkit-scrollbar-thumb {
+        @apply bg-dark/10 rounded-[0.3125rem];
+    }
+    &::-webkit-scrollbar-track {
+        @apply rounded-[0.3125rem];  
+    }
+    .task-image {  
+        .kanban-image {
+            @apply h-[150px] w-full;
+        }
+    } 
+    .kanban-content {
+        @apply mt-3;
+    }
+    .kanban-task-description {
+        @apply text-textmuted dark:text-textmuted/50 mb-[1rem];
+    }
+    .kanban-tasks-type {
+        &.new {
+            .kanban-tasks .box{
+                @apply border border-primary/20 border-solid;
+            }
+        }
+        &.todo {
+            .kanban-tasks .box{
+                @apply border border-primarytint1color/20 border-solid;
+            }
+        }
+        &.in-progress {
+            .kanban-tasks .box{
+                @apply border border-primarytint2color/20 border-solid;
+            }
+        }
+        &.inreview {
+            .kanban-tasks .box{
+                @apply border border-primarytint3color/20 border-solid;
+            }
+        }
+        &.completed {
+            .kanban-tasks .box{
+                @apply border border-secondary/20 border-solid;
+            }
+        }
+    }
+    #new-tasks,#todo-tasks,#inprogress-tasks,#inreview-tasks,#completed-tasks {
+        .box:last-child {
+            @apply mb-0;
+        }
+    }
+    #new-tasks,#todo-tasks,#inprogress-tasks,#inreview-tasks,#completed-tasks {
+        @apply relative max-h-[35rem];
+        .simplebar-content {
+            @apply ps-0 pe-4 py-0 #{!important};
+        }
+    }
+    .task-Null {
+        @apply relative min-h-[12.5rem];
+        &::before {
+            @apply absolute content-[""] bg-white dark:bg-bodybg bg-[url(../images/media/media-92.svg)] bg-cover bg-center h-[12.5rem] w-full mx-auto my-0 rounded-[0.3rem] inset-0;
+        }
+    }
+    .view-more-button {
+        @apply me-4;
+    }
+}
+/* end::task-kanboard-board */
+
+/* Start::task-details */
+.task-details-key-tasks {
+    @apply list-decimal;
+    li {
+        @apply text-textmuted dark:text-textmuted/50 mb-2;
+        &:last-child {
+            @apply mb-0;
+        }
+    }
+}
+.task-description {
+    @apply text-sm;
+}
+/* End::task-details */
+/* End:: task */

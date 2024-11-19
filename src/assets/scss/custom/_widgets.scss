@@ -1,0 +1,82 @@
+/* Start:: widgets */
+.widget-card {
+    @apply relative bg-[url(../images/media/media-25.jpg)] z-[1] py-[3.15rem];
+    &:before {
+        @apply content-[""] absolute bg-primary/80 w-full h-full text-white z-[-1] start-0 top-0;
+    }
+}
+
+.widget-card2 {
+    @apply relative bg-[url(../images/media/media-35.jpg)] z-[1] py-[3.735rem];
+    &:before {
+        @apply relative content-[""] absolute bg-primary/80 w-full h-full text-white z-[-1] start-0 top-0;
+    }
+}
+
+.visit-gender.male:before {
+    @apply bg-primary;
+}
+
+.visit-gender.female:before {
+    @apply bg-secondary;
+}
+
+.visit-gender {
+    @apply relative;
+
+    &::before {
+        @apply absolute content-[""] w-3 h-1.5 start-[-30px] rounded-[0.1rem] top-[7px];
+    }
+}
+
+#chart-10,
+#chart-11,
+#chart-12,
+#chart-13 {
+    @apply absolute top-[-0.5rem] end-4;
+}
+
+.widgets-task-list {
+    @apply relative mb-0 list-none;
+
+    li {
+        @apply relative mb-[14px];
+        &:last-child {
+            @apply mb-0;
+        }
+        &:before {
+            @apply content-[""] absolute w-[9px] h-[9px] bg-white dark:bg-bodybg start-[-27px] rounded-[50%] top-[7px];
+        }
+        &:nth-child(1){
+            @apply before:shadow-[0_0_4px_2px_rgba(92,103,247,0.5)] before:border-[2px] before:border-solid before:border-primary;
+        }
+        &:nth-child(2){
+            @apply before:shadow-[0_0_4px_2px_rgba(227,84,212,0.5)] before:border-[2px] before:border-solid before:border-primarytint1color;
+        }
+        &:nth-child(3){
+            @apply before:shadow-[0_0_4px_2px_rgba(255,93,159,0.5)] before:border-[2px] before:border-solid before:border-primarytint2color;
+        }
+        &:nth-child(4){
+            @apply before:shadow-[0_0_4px_2px_rgba(255,142,111,0.5)] before:border-[2px] before:border-solid before:border-primarytint3color;
+        }
+        &:nth-child(5){
+            @apply before:shadow-[0_0_4px_2px_rgba(158,92,247,0.5)] before:border-[2px] before:border-solid before:border-secondary;
+        }
+        &:nth-child(6){
+            @apply before:shadow-[0_0_4px_2px_rgba(33,206,158,0.5)] before:border-[2px] before:border-solid before:border-success;
+        }
+    }   
+
+    &:before {
+        @apply content-[""] absolute h-[90%] border-s-defaultborder dark:border-defaultborder/10 border-s border-dashed start-[9px] top-1 bottom-0;
+    }
+}
+#activecustomers {
+    .apexcharts-text.apexcharts-datalabel-label {
+        @apply fill-textmuted dark:text-textmuted/50;
+    }
+}
+.widget-circle-chart {
+    @apply h-[218px];
+}
+/* End:: widgets */

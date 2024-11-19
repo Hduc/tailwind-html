@@ -1,0 +1,218 @@
+/* Start:: mail */
+/* Start:: mail-app */
+.main-mail-container {
+  @apply relative overflow-hidden;
+}
+.mail-navigation,
+.total-mails,
+.mail-recepients {
+  @apply bg-white dark:bg-bodybg h-[calc(100vh_-_10rem)] overflow-hidden rounded-md;
+}
+.mail-info-body {
+  @apply max-h-[calc(100vh_-_8.3rem)];
+}
+@media (min-width: 1400px) {
+  .total-mails {
+    .mail-msg {
+      .mail-msg-content {
+        @apply inline-block;
+      }
+    }
+  }
+}
+@media (min-width: 1400px) and (max-width: 1489.98px) {
+  .responsive-mail-action-icons {
+    .dropdown {
+      @apply block;
+    }
+    .close-button {
+      @apply hidden
+    }
+  }
+  .mail-action-icons {
+    @apply hidden
+  }
+}
+@media (max-width: 1399.98px) {
+  .responsive-mail-action-icons {
+    @apply block flex;
+  }
+  .mail-action-icons {
+    @apply hidden #{!important};
+  }
+}
+@media (max-width: 575.98px) {
+  .mail-recepients {
+    @apply hidden;
+  }
+}
+@media (min-width: 1489px) {
+  .responsive-mail-action-icons {
+    @apply hidden;
+  }
+}
+@media (max-width: 991.98px) {
+  .mail-navigation {
+    @apply w-full;
+  }
+}
+@media (min-width: 992px) {
+  .mail-navigation {
+    @apply min-w-[20rem] max-w-xs;
+  }
+}
+.total-mails {
+  @apply w-full;
+  .mail-messages {
+    @apply max-h-[calc(100vh_-_19.5rem)];
+    li {
+      @apply pt-[1.1rem] pb-2.5 px-4 border-b border-solid border-defaultborder dark:border-defaultborder/10;
+      &.active, &:hover {
+        @apply bg-primary/[0.05]
+      }
+      &:last-child {
+        @apply border-b-0;
+      }
+      .avatar.mail-msg-avatar {
+        @apply w-8 h-8;
+        &.online:before,
+        &.offline:before {
+          @apply w-[0.55rem] h-[0.55rem];
+        }
+      }
+      .mail-msg {
+        .mail-starred {
+          i {
+            @apply text-textmuted dark:text-textmuted/50 opacity-50;
+          }
+          &.true {
+            i {
+              @apply text-warning opacity-100;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.mail-recepients {
+  @apply min-w-[4.4rem] max-w-[4.4rem];
+  .total-mail-recepients {
+    @apply max-h-[calc(100vh_-_13.4rem)];
+  }
+  .mail-recepeint-person {
+    .avatar {
+      @apply w-8 h-8 mb-4;
+      &.online:before,
+      &.offline:before {
+        @apply w-[0.55rem] h-[0.55rem];
+      }
+    }
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+}
+.mail-navigation {
+  ul.mail-main-nav {
+    @apply max-h-[calc(100vh_-_14.5rem)] mb-0 p-4;
+    li {
+      @apply rounded-md font-medium px-[0.8rem] py-[0.55rem];                                           
+      div {
+        @apply text-textmuted dark:text-textmuted/50;
+      }
+      &.active {
+        @apply bg-primary/10;
+        div {
+          @apply text-primary font-semibold;
+        }
+      }
+      &:hover {
+        div {
+          @apply text-primary;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 576px) {
+  .mail-msg-content {
+    @apply w-full;
+  }
+}
+@media (max-width: 575.98px) {
+  .mail-msg-content {
+    @apply max-w-[180px];
+  }
+}
+.mails-information {
+  @apply w-full;
+  .mail-info-header {
+    @apply border-b-defaultborder p-3 border-b border-solid dark:border-defaultborder/10;
+  }
+  .mail-info-footer {
+    @apply border-t-defaultborder p-3 border-t border-solid dark:border-defaultborder/10;
+  }
+  
+  .mail-attachment {
+    @apply w-48 h-11 border border-defaultborder rounded-md flex items-center p-1 border-solid;
+    .attachment-icon {
+      svg,
+      i {
+        @apply w-6 h-6 text-[2rem] me-2;
+      }
+    }
+    .attachment-name {
+      @apply max-w-[7rem] inline-block text-xs font-medium;
+    }
+  }
+}
+.mail-reply {
+  .ql-toolbar.ql-snow .ql-formats {
+    @apply my-[5px];
+  }
+}
+#mail-compose-editor {
+  .ql-editor {
+    @apply min-h-[12.62rem] #{!important};
+  }
+}
+.mail-compose {
+  .ql-toolbar.ql-snow .ql-formats {
+    @apply my-[5px];
+  }
+}
+.ti-offcanvas.ti-offcanvas-right.mail-info-offcanvas {  
+  @apply max-w-[50rem];
+}
+/* End:: mail-app */
+
+/* Start:: mail-settings */
+.mail-notification-settings,.mail-security-settings {
+  @apply w-3/5;
+}
+@media (max-width: 575.98px) {
+  #account-settings {
+    .btn-group label {
+      @apply text-[0.625rem];
+    }
+  }
+}
+
+.choices__list--dropdown .choices__item--selectable,
+.choices__list[aria-expanded] .choices__item--selectable {
+  @apply p-2.5 #{!important};
+}
+.choices__list--dropdown .choices__item--selectable::after,
+.choices__list[aria-expanded] .choices__item--selectable::after {
+  @apply hidden;
+}
+.mail-settings-tab.nav-tabs-header .nav-item .nav-link {
+  @apply px-[0.8rem] py-[0.65rem] border-0;
+}
+.mail-settings-tab.nav-tabs-header .nav-item .nav-link:hover, .mail-settings-tab.nav-tabs-header .nav-item .nav-link:focus {
+  @apply border-0;
+}
+
+/* End:: mail-settings */
+/* End:: mail */   

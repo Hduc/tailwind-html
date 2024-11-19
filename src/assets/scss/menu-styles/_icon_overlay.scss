@@ -1,0 +1,132 @@
+/* Start:: icon_overlay */
+[data-vertical-style="overlay"][data-toggled="icon-overlay-close"] {
+    @media(min-width: 992px) {
+        &:not([data-icon-overlay="open"]) {
+            .app-sidebar {
+                @apply w-20;
+                .main-sidebar-header {
+                    @apply w-20 justify-center;
+                    .header-logo {
+                        .toggle-logo {
+                            @apply block;
+                        }
+                        .desktop-dark,
+                        .desktop-logo,
+                        .toggle-dark {
+                            @apply hidden;
+                        }
+                    }
+                }
+                .category-name,
+                .side-menu__label,
+                .side-menu__angle {
+                    @apply hidden;
+                }
+                .slide.has-sub.open {
+                    .slide-menu {
+                        @apply hidden #{!important};
+                    }
+                }
+                .side-menu__icon {
+                    @apply me-0;
+                }
+                .slide__category {
+                    @apply relative p-[1.65rem];
+                    &:before {
+                        @apply content-["\f3c2"] absolute text-[8px] opacity-100 text-menuprimecolor start-9 end-0 top-5 bottom-0 font-remix;
+                    }
+                }
+                .side-menu__item .badge {
+                    @apply hidden;
+                }
+            }
+            .side-menu__item {
+                @apply justify-center;
+            }
+            .sidebar-profile {
+                @apply hidden;
+            }
+        }
+        .app-header {
+            @apply ps-20;
+        }
+        .app-content {
+            @apply ms-20;
+        }
+
+        &[data-icon-overlay="open"] {
+            .app-sidebar {
+                @apply w-60;
+                .main-sidebar-header {
+                    @apply w-60;
+                    .header-logo {
+                        .desktop-logo {
+                            @apply block;
+                        }
+                        .desktop-dark,
+                        .toggle-logo,
+                        .toggle-dark {
+                            @apply hidden;
+                        }
+                    }
+                }
+                .side-menu__item {
+                    @apply justify-start;
+                }
+                .side-menu__icon {
+                    @apply me-2.5;
+                }
+                .slide__category {
+                    @apply px-[1.2rem] py-3;
+                    &:before {
+                        @apply hidden;
+                    }
+                }
+            }
+        }
+        
+        &[class="dark"] {
+            .main-sidebar-header {
+                .header-logo {
+                    .toggle-dark {
+                        @apply block;
+                    }
+                    .desktop-dark,
+                    .desktop-logo,
+                    .toggle-logo {
+                        @apply hidden;
+                    }
+                }
+            }
+            &[data-icon-overlay="open"] {
+                .main-sidebar-header {
+                    .header-logo {
+                        .desktop-dark {
+                            @apply block;
+                        }
+                        .toggle-dark,
+                        .desktop-logo,
+                        .toggle-logo {
+                            @apply hidden;
+                        }
+                    }
+                }   
+                &[data-menu-styles="light"] {
+                    .main-sidebar-header {
+                        .header-logo {
+                            .desktop-logo {
+                                @apply block;
+                            }
+                            .toggle-dark,
+                            .desktop-dark,
+                            .toggle-logo {
+                                @apply hidden;
+                            }
+                        }
+                    }   
+                }
+            }
+        }
+    }
+}
+/* End:: icon_overlay */

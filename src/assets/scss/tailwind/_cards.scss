@@ -1,0 +1,156 @@
+.box.box-bg-primary {
+    @apply bg-primary text-white #{!important};
+}
+.box.box-bg-success {
+    @apply bg-secondary text-white #{!important};
+}  
+
+/* Start::Card Background Colors */
+.box-bg-primary {
+    @apply bg-primary text-white #{!important};
+  }
+  .box-bg-primary .box-header {
+    @apply text-white border-b-[rgba(255,255,255,0.1)] border-b border-solid before:bg-white;
+  }
+  .box-bg-primary .box-body {
+    @apply text-white;
+  }
+  .box-bg-primary .box-footer {
+    @apply text-white border-t-[rgba(255,255,255,0.1)] border-t border-solid;
+  }
+  .box-bg-primary1 {
+    @apply bg-primarytint1color text-white #{!important};
+  }
+  .box-bg-primary1 .box-header {
+    @apply text-white border-b-[rgba(255,255,255,0.1)] border-b border-solid before:bg-white;
+  }
+  .box-bg-primary1 .box-body {
+    @apply text-white;
+  }
+  .box-bg-primary1 .box-footer {
+    @apply text-white border-t-[rgba(255,255,255,0.1)] border-t border-solid;
+  }
+  .box-bg-primary2 {
+    @apply bg-primarytint2color text-white #{!important};
+  }
+  .box-bg-primary2 .box-header {
+    @apply text-white border-b-[rgba(255,255,255,0.1)] border-b border-solid before:bg-white;
+  }
+  .box-bg-primary2 .box-body {
+    @apply text-white;
+  }
+  .box-bg-primary2 .box-footer {
+    @apply text-white border-t-[rgba(255,255,255,0.1)] border-t border-solid;
+  }
+  .box-bg-primary3 {
+    @apply bg-primarytint3color text-white #{!important};
+  }
+  .box-bg-primary3 .box-header {
+    @apply text-white border-b-[rgba(255,255,255,0.1)] border-b border-solid before:bg-white;
+  }
+  .box-bg-primary3 .box-body {
+    @apply text-white;
+  }
+  .box-bg-primary3 .box-footer {
+    @apply text-white border-t-[rgba(255,255,255,0.1)] border-t border-solid;
+  }
+  .box-bg-secondary {
+    @apply bg-secondary text-white #{!important};
+  }
+  .box-bg-secondary .box-header {
+    @apply text-white border-b-[rgba(255,255,255,0.1)] border-b border-solid before:bg-white;
+  }
+  .box-bg-secondary .box-body {
+    @apply text-white;
+    }
+    .box-bg-secondary .box-footer {
+    @apply text-white border-t-[rgba(255,255,255,0.1)] border-t border-solid;
+  }
+  .box-bg-warning {
+    @apply bg-warning text-white #{!important};
+  }
+  .box-bg-warning .box-header {
+    @apply text-white border-b-[rgba(255,255,255,0.1)] border-b border-solid before:bg-white;
+  }
+  .box-bg-warning .box-body {
+    @apply text-white;
+  }
+  .box-bg-warning .box-footer {
+    @apply text-white border-t-[rgba(255,255,255,0.1)] border-t border-solid;
+  }
+  .box-bg-info {
+    @apply bg-info text-white #{!important};
+  }
+  .box-bg-info .box-header {
+    @apply text-white border-b-[rgba(255,255,255,0.1)] border-b border-solid before:bg-white;
+  }
+  .box-bg-info .box-body {
+    @apply text-white;
+  }
+  .box-bg-info .box-footer {
+    @apply text-white border-t-[rgba(255,255,255,0.1)] border-t border-solid;
+  }
+  .box-bg-success {
+    @apply bg-success text-white #{!important};
+  }
+  .box-bg-success .box-header {
+    @apply text-white border-b-[rgba(255,255,255,0.1)] border-b border-solid before:bg-white;
+  }
+  .box-bg-success .box-body {
+    @apply text-white;
+  }
+  .box-bg-success .box-footer {
+    @apply text-white border-t-[rgba(255,255,255,0.1)] border-t border-solid;
+  }
+  .box-bg-danger {
+    @apply bg-danger text-white #{!important};
+  }
+  .box-bg-danger .box-header {
+    @apply text-white border-b-[rgba(255,255,255,0.1)] border-b border-solid before:bg-white;
+  }
+  .box-bg-danger .box-body {
+    @apply text-white;
+  }
+  .box-bg-danger .box-footer {
+    @apply text-white border-t-[rgba(255,255,255,0.1)] border-t border-solid;
+  }
+  .box-bg-orange {
+    @apply bg-orangemain text-white #{!important};
+  }
+  .box-bg-orange .box-header {
+    @apply text-white border-b-[rgba(255,255,255,0.1)] border-b border-solid before:bg-white;
+  }
+  .box-bg-orange .box-body {
+    @apply text-white;
+  }
+  .box-bg-orange .box-footer {
+    @apply text-white border-t-[rgba(255,255,255,0.1)] border-t border-solid;
+  }
+  .box-bg-light {
+    @apply bg-light text-defaulttextcolor #{!important};
+  }
+  .box-bg-light .box-header {
+    @apply text-defaulttextcolor border-b-defaultborder;
+  }
+  .box-bg-light .box-body {
+    @apply text-defaulttextcolor;
+  }
+  .box-bg-light .box-footer {
+    @apply text-defaulttextcolor border-t-defaultborder;
+  }
+  .box-bg-dark {
+    @apply bg-dark text-white #{!important};
+  }
+  .box-bg-dark .box-header {
+    @apply text-white border-b-[rgba(255,255,255,0.2)] border-b border-solid before:bg-white;
+  }
+  .box-bg-dark .box-body {
+    @apply text-white;
+  }
+  .box-bg-dark .box-footer {
+    @apply text-white border-t-[rgba(255,255,255,0.2)] border-t border-solid;
+  }
+  
+  /* End::Card Background Colors */
+  
+  

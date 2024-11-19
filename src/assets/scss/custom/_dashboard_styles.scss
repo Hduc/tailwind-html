@@ -1,0 +1,617 @@
+/* Start:: dashboard_styles */
+/* New Styles */
+#referrals-chart, #job-acceptance , #portfolio, #patients-chart, #follow-on-device {
+  .apexcharts-pie text {
+    @apply fill-defaulttextcolor #{!important};
+  }
+}
+.top-categories{
+.table th, .table td {
+ @apply py-[0.83rem] px-[0.75rem] #{!important};
+}
+}
+//analytics
+ul.analytics-activity li {
+  @apply mb-[1.17rem];
+}
+#orders {
+  .apexcharts-pie line, .apexcharts-pie circle {
+    @apply stroke-transparent #{!important};
+  }
+  .apexcharts-pie text {
+    @apply fill-defaulttextcolor dark:fill-defaulttextcolor/60 #{!important};
+  }
+  .apexcharts-legend {
+    @apply px-9 py-0 #{!important};
+  }
+}
+#circlechart,#recent-orders{
+  .apexcharts-datalabels-group{
+    text{
+      @apply text-defaulttextcolor dark:text-defaulttextcolor/80 fill-defaulttextcolor dark:fill-defaulttextcolor/80 #{!important};
+    }
+  }
+  }
+.sales-country-list {
+  @apply mb-0;
+  li {
+    @apply mb-[1.05rem];
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+}
+.analytics-visitors-countries{
+  li{
+    @apply mb-[1.4rem];
+  }
+}
+#chart-21, #chart-22, #chart-23, #chart-24 {
+  @apply mb-[-7px];
+}
+.top-category-name {
+  @apply relative ps-4;
+  &:before {
+    @apply content-[""] absolute w-2.5 h-2.5 rounded-[50%] border-2 border-solid border-primary -start-0.5 top-1.5;
+  }
+  &.one:before {
+    @apply border-2 border-solid border-primary;
+  }
+  &.two:before {
+    @apply border-primarytint1color border-2 border-solid;
+  }
+  &.three:before {
+    @apply border-primarytint2color border-2 border-solid;
+  }
+  &.four:before {
+    @apply border-primarytint3color border-2 border-solid;
+  }
+  &.five:before {
+    @apply border-2 border-solid border-warning;
+  }
+}
+.box.main-dashboard-banner {
+  @apply z-[1] shadow-none border-0;
+  &:before {
+    @apply content-[""] absolute w-full h-full bg-[linear-gradient(to_right_top,#ff9794,#fd8dac,#e58cc6,#bf7cdc,#6f78f4)] z-[-1];
+  }
+
+  &:after {
+    @apply content-[""] absolute w-full h-full bg-[url(../images/media/media-87.png)] bg-cover bg-center bg-repeat z-[-1] opacity-10;
+  }
+  img {
+    @apply absolute w-[200px] h-[200px] bottom-[-30px] end-2.5;
+  }
+}
+.box.main-dashboard-banner.main-dashboard-banner2 {
+  &:before {
+    @apply bg-primary bg-none;
+  }
+  &:after {
+    @apply bg-[url(../images/media/media-87.png)];
+  }
+  img {
+    @apply w-[170px] h-[170px] bottom-[-9px];
+  }
+}
+
+.recent-activity-list {
+  @apply relative mb-0 before:absolute before:w-[1px] before:bg-defaultborder before:dark:bg-defaultborder/10 before:h-[82%] before:start-[65px] before:top-3;
+
+  li {
+    @apply relative mb-[1.1rem] ps-[5.75rem];
+    .activity-time {
+      @apply absolute start-0 top-0.5;
+    }
+
+    &:nth-child(1) {
+        @apply before:bg-primary dark:before:bg-primary before:shadow-[0px_0px_0px_4px_rgba(var(--primary-rgb),0.15)];
+    }
+
+    &:nth-child(2) {
+      @apply before:bg-primarytint1color dark:before:bg-primarytint1color before:shadow-[0px_0px_0px_4px_rgba(227,84,212,0.15)];
+    }
+
+    &:nth-child(3) {
+        @apply before:bg-primarytint2color dark:before:bg-primarytint2color before:shadow-[0px_0px_0px_4px_rgba(255,93,159,0.15)];
+    }
+
+    &:nth-child(4) {
+      @apply before:bg-primarytint3color dark:before:bg-primarytint3color before:shadow-[0px_0px_0px_4px_rgba(255,142,111,0.15)];
+    }
+
+    &:nth-child(5) {
+      @apply before:bg-secondary dark:before:bg-secondary before:shadow-[0px_0px_0px_4px_rgba(158,92,247,0.15)];
+    }
+
+    &:nth-child(6) {
+      @apply before:bg-warning dark:before:bg-warning before:shadow-[0px_0px_0px_4px_rgba(158,92,247,0.15)];
+    }
+
+    &:before {
+      @apply absolute content-[""] w-[7px] h-[7px] bg-white dark:bg-bodybg rounded-[50%] start-[62px] top-[7px];
+    }
+
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+}
+.main-content-card {
+  @apply relative z-[1] overflow-hidden border border-defaultborder dark:border-defaultborder/10 border-solid;
+  &:before {
+    content: "";
+    @apply content-[""] absolute w-full h-full bg-[url(../images/media/media-89.png)] bg-center bg-repeat z-[-1] opacity-60 bg-cover inset-0;
+  }
+}
+[class="dark"] {
+  .main-content-card:before {
+    @apply invert-[1] opacity-0;
+  }
+}
+.offer-card {
+  @apply z-[1] bg-[url(../images/media/backgrounds/1.jpg)] relative overflow-hidden bg-cover bg-bottom before:content-[""] before:absolute before:w-full before:h-full before:bg-primary/70 before:z-[-1];
+}
+
+.offer-card-details .offer-item-img {
+  @apply absolute h-48 -end-0.5 bottom-[18px];
+}
+@media (max-width: 380px) {
+  .offer-card-details .offer-item-img {
+    @apply hidden;
+  }
+}
+.order-content {
+  @apply mb-[-25px];
+}
+.ecommerce-recent-activity {
+  @apply relative overflow-hidden before:absolute before:content-[""] before:w-px before:bg-transparent before:border before:border-defaultborder dark:before:border-defaultborder/10 before:h-full before:border-dashed before:start-[0.8rem] before:top-[1.4375rem];
+}
+.ecommerce-recent-activity li {
+  @apply pb-[1.65rem];
+}
+#revenue-report {
+  @apply pt-[6.1rem];
+}
+#profit-report {
+  @apply absolute w-full z-[1] bottom-0 inset-x-0;
+}
+.task-list-tab li {
+  @apply mb-[1.55rem] last:mb-0;
+}
+#Leads-overview .apexcharts-yaxis .apexcharts-text {
+  @apply fill-[#b6c5d3];
+}
+.timeline-widget-list {
+  @apply mb-2 last:mb-0;
+}
+
+.courses-instructors li {
+  @apply mb-[1.23rem];
+}
+.schedule-list li{
+  @apply mb-[1.4rem]; 
+}
+.schedule-list li:last-child,
+.courses-instructors li:last-child {
+  @apply mb-0;
+}
+.market-cap-list li {
+  @apply mb-5 last:mb-0;
+}
+.nft-banner-card {
+  @apply z-[1] before:content-[""] before:absolute before:w-full before:h-full before:bg-[url(../images/nft-images/35.jpg)] before:bg-cover before:bg-center before:bg-no-repeat before:z-[-1] before:rounded-lg before:inset-0 after:content-[""] after:absolute after:z-[-1] after:w-full after:h-full after:bg-[linear-gradient(to_right,rgba(0,0,0,0.5)_30%,transparent)] after:bg-cover after:bg-center after:bg-no-repeat after:rounded-xl after:inset-0;
+}
+.nft-main-banner-image {
+  @apply h-48 rounded-[50%];
+}
+.nft-auction-time {
+  @apply absolute text-[11px] z-[1] px-2 py-[5px] rounded-br-[15px] rtl:rounded-bl-[15px] rtl:rounded-br-none rtl:rounded-tl-none start-0 top-0 rounded-tl-sm rtl:rounded-tr-sm;
+}
+.nft-like-badge {
+  @apply absolute bg-[rgba(0,0,0,0.5)] rounded-none end-0 bottom-0;
+}
+#nft-collections-slide {
+  @apply rtl:dir-ltr;
+}
+
+.bid-amt svg {
+  @apply w-[11px] h-[17px] mb-1;
+}
+.bg-crypto-balance {
+  @apply relative z-[1] before:content-[""] before:absolute before:bg-[url(../images/media/media-88.jpg)] before:z-[-1] before:w-full before:h-full before:opacity-[0.15] before:bg-cover before:bg-bottom before:rounded-md before:-scale-y-100 before:start-0 before:top-0 after:content-[""] after:absolute after:z-[-1] after:h-full after:w-full after:bg-[url(../images/media/media-73.png)] after:bg-no-repeat after:opacity-[0.07] after:-scale-x-100 after:end-[0.15rem] after:top-0;
+}
+.box.main-dashboard-banner.project-dashboard-banner {
+  &:before {
+    @apply bg-primary bg-none;
+  }
+  &:after {
+    @apply bg-[url(../images/media/media-82.jpg)] opacity-[0.35];
+  }
+  img {
+    @apply w-[197px] h-[168px] end-[-5px] saturate-[0.9] opacity-95 -bottom-1;
+  }
+}
+.daily-tasks-time {
+  @apply w-[4.5rem] bg-light text-center text-[13px] p-1 rounded-[7px];
+}
+
+.box.course-main {
+  @apply z-[1];
+  &:before {
+    @apply content-[""] absolute w-full h-full bg-cover bg-repeat z-[-1] bg-bottom opacity-20 bg-[url(../images/media/media-80.jpg)] -scale-x-100;
+  }
+  &:after {
+    @apply content-[""] absolute w-full h-full bg-cover bg-repeat z-[-1] bg-[rgb(0_0_0_/_6%)] -scale-x-100 end-0;
+  }
+}
+.Upcoming-courses-schedule {
+	& > .list-item {
+		@apply mb-5;
+		&:last-child {
+			@apply mb-0;
+		}
+		&:nth-child(2) {
+			.course-schedule {
+				&::before {
+					@apply bg-primary;
+				}
+			}
+		}
+		&:nth-child(3) {
+			.course-schedule {
+				&::before {
+					@apply bg-primarytint1color;
+				}
+			}
+		}
+		&:nth-child(4) {
+			.course-schedule {
+				&::before {
+					@apply bg-primarytint2color;
+				}
+			}
+		}
+		&:nth-child(5) {
+			.course-schedule {
+				&::before {
+					@apply bg-primarytint3color;
+				}
+			}
+		}
+		&:nth-child(6) {
+			.course-schedule {
+				&::before {
+					@apply bg-secondary;
+				}
+			}
+		}
+	}
+}
+.course-schedule {
+	@apply relative;
+	&::before {
+		@apply content-[""] absolute start-[-15px] h-[96%] w-[0.2rem] rounded-md bg-info top-0;
+	}
+}
+.top-categories{
+  li{
+    @apply mb-[1.5rem];
+  }
+}
+.svg-icon-med {
+  @apply w-20 h-20 me-[-1.6875rem] bg-[rgba(0,0,0,0.3)] mb-[-22px] p-[1.1875rem] rounded-[50%];
+  &.opacity-1 {
+    @apply opacity-70 #{!important};
+  }
+  &.text-primary { 
+    @apply bg-primary/20;
+  }
+  &.text-primarytint1color {
+    @apply bg-primarytint1color/20;
+  }
+  &.text-primarytint2color {
+    @apply bg-primarytint2color/20;
+  }
+  &.text-primarytint3color {
+    @apply bg-primarytint3color/20;
+  }
+}
+
+.med-banner-card {
+  @apply relative overflow-hidden bg-primary z-0 #{!important};
+  &::before {
+    @apply content-[""] absolute w-full h-full bg-[url(../images/media/media-72.jpg)] bg-cover bg-no-repeat z-[-1] opacity-25 start-0 top-0;
+  }
+  &:after {
+    @apply content-[""] absolute z-[-1] h-44 w-44 bg-white opacity-5 rounded-[50%] end-[5.15rem] top-5;
+  }
+}
+.med-banner-img {
+  @apply h-44 absolute content-[""] mt-0 end-[42px] top-[5px];
+}
+.upcoming-shedule .sh-link {
+  @apply min-w-[70px] max-w-[70px] transition-all ease-linear duration-[0.3s] bg-light rounded-[3px] text-center p-[0.6rem] flex flex-col;
+}
+.upcoming-shedule .sh-shedule-container li {
+  @apply mb-[1.4rem] last:mb-0;
+}
+.pos-category .box.active,
+.pos-category .box:hover {
+  @apply border border-primary/30 bg-primary/[0.05] border-solid;
+}
+.stretched-link {
+  @apply after:absolute after:inset-0 after:z-[1];
+}
+@media (min-width: 1400px) {
+  .list-wrapper .card-item {
+    @apply w-[25%] px-3;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 1400px) {
+  .list-wrapper .card-item {
+  @apply w-[50%] px-3;
+  }
+}
+
+@media (max-width: 576px) {
+  .list-wrapper .card-item {
+    @apply w-[100%] px-3;
+  }
+}
+.pos-category .box {
+  @apply border border-solid border-transparent;
+}
+.pos-category .box .categorymenu-icon {
+  @apply bg-primary/40;
+}
+.pos-category .box .avatar svg {
+  @apply w-[4.25rem] h-[4.25rem] fill-primary;
+}
+.pos-card-image img {
+  @apply h-[10.5rem] w-40 relative mt-[-54px];
+}
+.categories-arrow {
+  @apply w-7 h-7 bg-white dark:bg-bodybg flex justify-center items-center cursor-pointer shadow-[0px_6px_16px_2px_rgba(0,0,0,0.05)] rounded-[50%];
+}
+.categories-arrow i {
+  @apply text-base text-defaulttextcolor;
+}
+[dir="rtl"] {
+  .categories-arrow,
+  .table-icon i {
+    @apply -scale-x-100;
+  }
+  .podcast-banner:before {
+    @apply scale-x-100;
+  }
+}
+.box.out-of-stock {
+  @apply opacity-[0.65];
+}
+.order-summ.product-quantity-container {
+  @apply w-28;
+}
+.podcast-banner {
+  @apply relative z-[1] before:content-[""] before:absolute before:w-full before:h-full before:bg-[url("../images/media/media-70.jpg")] before:bg-cover before:bg-center before:bg-no-repeat before:z-[-1] before:rounded-lg before:-scale-x-100 before:inset-0;
+}
+// .podcast-banner:after {
+//   @apply absolute z-[-1] w-full h-full bg-cover bg-center bg-no-repeat opacity-75 rounded-lg inset-0;
+// }
+.podcast-banner:after {
+  @apply content-[""] absolute z-[-1] w-full h-full bg-gradient-to-br from-primary to-secondary bg-cover bg-center bg-no-repeat opacity-75 rounded-lg inset-0;
+}
+.podcasters {
+  @apply mb-0;
+}
+.podcasters li {
+  @apply mb-4 last:mb-0;
+}
+.podcast-playing-now {
+  @apply w-24 h-24 flex justify-center mx-auto my-0;
+}
+.podcast-playing-now img {
+  @apply rounded-xl;
+}
+.podcast-playing-progress {
+  @apply w-full;
+}
+.podcast-playing-progress .progress-custom .progress-bar:after {
+  @apply content-[""] w-3 h-3 shadow-[0_0.313rem_0.313rem_primary/20] bg-white absolute end-[-0.375rem] border-primary rounded-[50%] border-4 border-solid -top-1;
+}
+.podcast-recently-played-list {
+  @apply mb-0;
+}
+.podcast-recently-played-list li {
+  @apply mb-4 last:mb-0;
+}
+.bg-playing-image {
+  @apply bg-[url(../images/podcast/5.jpg)] bg-cover w-full bg-no-repeat overflow-hidden text-white relative z-0 rounded-lg;
+  &:before {
+    @apply content-[""] absolute w-full h-full z-[-1] bg-primary opacity-70 start-0 top-0;
+  }
+}
+.school-card {
+  svg {
+    @apply w-[2.95rem] h-[2.95rem];
+  }
+}
+.school-activity-list {
+  @apply relative mb-0;
+  &:before {
+    @apply absolute content-[""] w-px bg-defaultborder dark:bg-defaultborder/10 h-[85%] start-[18px] top-3;
+  }
+
+  li {
+    @apply relative mb-[1.1rem] ps-11;
+
+    .activity-time {
+      @apply absolute start-0 top-0.5;
+    }
+
+    &:nth-child(1) {
+        @apply before:bg-primary before:shadow-[0px_0px_0px_4px_rgba(var(--primary-rgb),0.15)];
+    }
+
+    &:nth-child(2) {
+      @apply before:bg-primarytint1color before:shadow-[0px_0px_0px_4px_rgba(227,84,212,0.15)];
+   }
+
+   &:nth-child(3) {
+    @apply before:bg-primarytint2color before:shadow-[0px_0px_0px_4px_rgba(255,93,159,0.15)];
+   }
+
+   &:nth-child(4) {
+    @apply before:bg-primarytint3color before:shadow-[0px_0px_0px_4px_rgba(255,142,111,0.15)];
+   }
+
+   &:nth-child(5) {
+    @apply before:bg-secondary before:shadow-[0px_0px_0px_4px_rgba(158,92,247,0.15)];
+   }
+
+   &:nth-child(6) {
+    @apply before:bg-warning before:shadow-[0px_0px_0px_4px_rgba(255,198,88,0.15)];
+   }
+
+    &:before {
+      @apply absolute content-[""] w-[7px] h-[7px] bg-white dark:bg-bodybg rounded-[50%] start-[15px] top-[7px];
+    }
+
+    &:last-child {
+      @apply mb-0;
+    }
+  }
+}
+
+.personal-favourite {
+  @apply mb-0;
+}
+
+.personal-favourite li {
+  @apply mb-6;
+}
+
+.personal-favourite li:last-child {
+  @apply mb-0;
+}
+.social-cards::after {
+  @apply content-[""] absolute end-[-18px] text-light text-[100px] leading-none font-medium z-[-1] opacity-[0.09] -top-8 font-remix;
+}
+.social-cards {
+  @apply z-[1] overflow-hidden;
+}
+.social-cards.insta::after {
+  @apply content-["\ee66"] text-primary;
+}
+.social-cards.linkedin::after {
+  @apply content-["\eeb6"] text-info;
+}
+.social-cards.fb::after {
+  @apply content-["\ecbd"] text-primary;
+}
+.social-cards.twit::after {
+  @apply content-["\f3e7"] text-dark;
+}
+.social-cards.youtube::after {
+  @apply content-["\f2d5"] text-danger;
+}
+.social-cards.msgr::after {
+  @apply content-["\ef4a"] text-secondary;
+}
+.stock-sparkline-charts {
+  @apply bottom-[-21px] relative -end-4;
+}
+#stockCap .apexcharts-selection-rect {
+  @apply fill-[rgba(0,0,0,0.4)] dark:fill-[255,255,255,0.4];
+}
+.crm-card {
+  @apply relative overflow-hidden z-0 after:content-[''] after:absolute after:z-[-1] after:h-full after:w-full after:end-[-1.85rem] after:bg-[url(../images/media/media-73.png)] after:bg-no-repeat after:opacity-[0.075] after:-scale-x-100;
+}
+@media (max-width: 575.98px) {
+  #crm-revenue-analytics .apexcharts-canvas .apexcharts-title-text {
+    @apply text-[0.71rem];
+  }
+}
+.buy-crypto .choices .choices__inner {
+  @apply pb-[7.5px];
+}
+.crypto-input {
+  .choices__inner {
+    @apply rounded-tl-none rounded-bl-none rtl:rounded-tr-none rtl:rounded-br-none rtl:rounded-tl-md rtl:rounded-bl-md #{!important};
+  }
+}
+#buy-crypto2,
+#sell-crypto2 {
+  .choices {
+    @apply overflow-visible;
+  }
+}
+@media (min-width: 1400px) {
+  .banner10-img {
+    @apply absolute h-28 end-[10px] top-[39px];
+  }
+}
+
+[dir="rtl"] {
+  #chart-21, #chart-22, #chart-23, #chart-24 {
+    .apexcharts-canvas {
+      @apply -scale-x-100;
+    }
+    .apexcharts-tooltip {
+      @apply -scale-x-100;
+    }    
+  }
+}
+.card-headertabs.nav-tabs-header .nav-item .nav-link {
+  @apply bg-light;
+}
+.card-headertabs.nav-tabs-header .nav-item .nav-link.active {
+  @apply bg-primary/10;
+}
+[data-width="boxed"] {
+  .events-width {
+    @apply w-[200px];
+    .timeline-widget-content {
+      @apply overflow-hidden text-ellipsis whitespace-nowrap;
+    }
+  }
+}
+[class="dark"] {
+  .xrp-logo {
+    @apply invert-[1];
+  }
+}
+#balanceAnalysis, #monthly-target {
+  .apexcharts-radialbar text {
+    @apply fill-defaulttextcolor #{!important};
+  }
+}
+@media (max-width: 767.98px) {
+  .med-banner-img {
+    @apply hidden;
+  }
+  .med-banner-card:after {
+    @apply content-none;
+  }
+}
+@media(min-width: 1400px) and (max-width: 1600px) {
+  .offer-card-details .offer-item-img {
+    @apply hidden;
+  }
+}
+
+#bitcoin-change, #etherium-change, #tether-change, #solana-change, #cardano-change, #binance-change {
+  .apexcharts-svg, .apexcharts-canvas {
+    @apply w-[120px] #{!important};
+  }
+}
+#revenue-stats{
+.apexcharts-pie{
+  text{
+    @apply fill-defaulttextcolor dark:fill-defaulttextcolor/80 text-defaulttextcolor dark:text-defaulttextcolor/80 #{!important};
+  }
+}
+}
+/* New Styles */
+/* End:: dashboard_styles */

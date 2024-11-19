@@ -1,0 +1,172 @@
+ <!-- include mainhead.html"-->
+
+</head>
+
+<body>
+
+    <!-- include switcher.html"-->
+    <!-- include loader.html"-->
+
+    <div class="page">
+        <!-- include header.html"-->
+        <!-- include sidebar.html"-->
+
+        <!-- Start::app-content -->
+        <div class="main-content app-content">
+            <div class="container-fluid">
+
+                <!-- Page Header -->
+                <div class="flex items-center justify-between page-header-breadcrumb flex-wrap gap-2">
+                    <div>
+                        <nav>
+                            <ol class="breadcrumb mb-1">
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Charts</a></li>
+                                <li class="breadcrumb-item"><a href="javascript:void(0);">Apex Charts</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Apex Column Charts</li>
+                            </ol>
+                        </nav>
+                        <h1 class="page-title font-medium text-lg mb-0">Apex Column Charts</h1>
+                    </div>
+                    <div class="btn-list">
+                        <button class="ti-btn bg-white dark:bg-bodybg border border-defaultborder dark:border-defaultborder/10 btn-wave !my-0">
+                            <i class="ri-filter-3-line align-middle me-1 leading-none"></i> Filter
+                        </button>
+                        <button class="ti-btn ti-btn-primary !border-0 btn-wave me-0">
+                            <i class="ri-share-forward-line me-1"></i> Share
+                        </button>
+                    </div>
+                </div>
+                <!-- Page Header Close -->
+
+                <!-- Start::row-1 -->
+                <div class="grid grid-cols-12 gap-x-6">
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <div class="box-title">Basic Column Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="column-basic"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <div class="box-title">Column Chart With Datalabels</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="column-datalabels"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <div class="box-title">Stacked Column Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="column-stacked"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <div class="box-title">100% Stacked Column Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="column-stacked-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <div class="box-title">Column Chart With Markers</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="column-markers"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <div class="box-title">Column Chart With Rotated Labels</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="column-rotated-labels"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <div class="box-title">Column Chart With Negative Values</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="column-negative"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <div class="box-title">Range Column Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="column-range"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <div class="box-title">Dynamic Loaded Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="chart-year"></div>
+                                <div id="chart-quarter"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                        <div class="box">
+                            <div class="box-header">
+                                <div class="box-title">Distributed Columns Chart</div>
+                            </div>
+                            <div class="box-body">
+                                <div id="columns-distributed"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--End::row-1 -->
+
+            </div>
+        </div>
+        <!-- End::app-content -->
+
+        
+        <!-- include footer.html"-->
+        <!-- include responsive-search-modal.html"-->
+
+    </div>
+
+    <!-- include commonjs.html"-->
+
+<!-- include custom-switcherjs.html"-->
+
+    <!-- Apex Charts JS -->
+    <script src="../assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- Internal Apex-Column-Charts JS -->
+    <script src="../assets/js/apexcharts-column.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+
+</html>

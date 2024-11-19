@@ -1,0 +1,250 @@
+/* Start:: detached_menu */
+[data-vertical-style="detached"] {
+  @media (min-width: 1600px) {
+    &[data-width="default"] {
+      .page {
+        @apply w-[95%] mx-auto my-0 ps-[10.25rem];
+      }
+      .main-content {
+        @apply ps-3 pe-40 py-0;
+      }
+      &[dir="rtl"] {
+        .main-content {
+          @apply ps-40 pe-3 py-0;
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .page {
+      @apply w-[95%] mx-auto my-0 ps-5;
+    }
+    .app-sidebar {
+      @apply h-[90%] #{!important};
+    }
+    .app-sidebar {
+      @apply rounded-md border-menubordercolor border-0 border-solid start-[inherit] top-[calc(64px_+_1.5rem)] bottom-6;
+      &:before {
+        @apply rounded-[0.3rem];
+      }
+
+      .main-sidebar-header {
+        @apply hidden;
+      }
+    }
+    .app-header {
+      .sidemenu-toggle.header-link.animated-arrow.hor-toggle.horizontal-navtoggle {
+        @apply ms-5;
+      }
+    }
+
+    .main-sidebar {
+      @apply h-full shadow-none mt-0;
+    }
+
+    .app-content {
+      @apply relative ms-60;
+    }
+
+    &[data-page-style="classic"] {
+      .app-sidebar {
+        @apply border border-menubordercolor border-solid;
+      }
+    }
+
+    &[class="light"] {
+      &[data-header-styles="dark"] {
+        .horizontal-logo {
+          .header-logo {
+            .desktop-logo,
+            .desktop-white,
+            .toggle-logo,
+            .toggle-white,
+            .toggle-dark {
+              @apply hidden;
+            }
+
+            .desktop-dark {
+              @apply block;
+            }
+          }
+        }
+      }
+
+      &[data-header-styles="color"],
+      &[data-header-styles="gradient"] {
+        .horizontal-logo {
+          .header-logo {
+            .desktop-logo,
+            .desktop-dark,
+            .toggle-logo,
+            .toggle-white,
+            .toggle-dark {
+              @apply hidden;
+            }
+
+            .desktop-white {
+              @apply block;
+            }
+          }
+        }
+      }
+    }
+
+    &[class="dark"] {
+      .horizontal-logo {
+        .header-logo {
+          .desktop-logo,
+          .desktop-white,
+          .toggle-logo,
+          .toggle-white,
+          .toggle-dark {
+            @apply hidden;
+          }
+
+          .desktop-dark {
+            @apply block;
+          }
+        }
+      }
+
+      &[data-header-styles="light"] {
+        .horizontal-logo {
+          .header-logo {
+            .desktop-dark,
+            .desktop-white,
+            .toggle-logo,
+            .toggle-white,
+            .toggle-dark {
+              @apply hidden;
+            }
+
+            .desktop-logo {
+              @apply block;
+            }
+          }
+        }
+      }
+    }
+
+    &[data-toggled="detached-close"] {
+      &:not([data-icon-overlay="open"]) {
+        .app-sidebar {
+          @apply w-20;
+
+          .side-menu__label,
+          .side-menu__angle,
+          .category-name,
+          .slide-menu,
+          .side-menu__item .badge {
+            @apply hidden #{!important};
+          }
+
+          .side-menu__item {
+            @apply justify-center;
+
+            .side-menu__icon {
+              @apply me-0;
+            }
+          }
+
+          .slide__category {
+            @apply relative px-[1.65rem] py-[1.2rem];
+            &:before {
+              @apply content-["\f3c2"] absolute text-[8px] opacity-100 text-menuprimecolor start-9 end-0 top-5 bottom-0 font-remix;
+            }
+          }
+        }
+      }
+
+      .app-content {
+        @apply relative ms-20;
+      }
+
+      &[data-icon-overlay="open"] {
+        .app-sidebar {
+          @apply w-60;
+
+          .main-sidebar-header {
+            @apply w-60;
+
+            .header-logo {
+              .desktop-logo {
+                @apply block #{!important};
+              }
+
+              .desktop-dark,
+              .desktop-white,
+              .toggle-logo,
+              .toggle-white,
+              .toggle-dark {
+                @apply hidden #{!important};
+              }
+            }
+          }
+
+          .side-menu__item {
+            @apply justify-start;
+          }
+
+          .side-menu__icon {
+            @apply me-2.5;
+          }
+
+          .slide__category {
+            @apply px-[1.65rem] py-3;
+
+            &:before {
+              @apply hidden;
+            }
+          }
+        }
+      }
+    }
+
+    .app-header {
+      @apply ps-0;
+
+      .main-header-container {
+        @apply w-[94%];
+      }
+
+      .horizontal-logo {
+        @apply block px-0 py-4;
+
+        img {
+          @apply h-6 leading-6;
+        }
+
+        .desktop-logo {
+          @apply block;
+        }
+
+        .desktop-dark,
+        .desktop-white,
+        .toggle-logo,
+        .toggle-white,
+        .toggle-dark {
+          @apply hidden;
+        }
+      }
+    }
+
+    .footer {
+      @apply shadow-none bg-transparent;
+    }
+
+    &[data-menu-styles="dark"] {
+      &[data-bg-img="bgimg3"],
+      &[data-bg-img="bgimg1"],
+      &[data-bg-img="bgimg2"],
+      &[data-bg-img="bgimg4"],
+      &[data-bg-img="bgimg5"] {
+        .app-sidebar:before {
+          @apply rounded-[0.3rem];
+        }
+      }
+    }
+  }
+}
+/* End:: detached_menu */
